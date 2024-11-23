@@ -1,15 +1,11 @@
-
-
 public class Main {
     public static void main(String[] args) {
-
 
         // Heading
         System.out.println();
         System.out.println();
         System.out.println("<<<<  Homework 10 (Strings) >>>>");
         System.out.println();
-
 
         int taskN = 0;
 
@@ -24,9 +20,7 @@ public class Main {
         String middleName = "Ivanovich";
         String lastName = "Ivanov";
         String fullName = lastName + " " + firstName + " " + middleName;
-
         System.out.println("Ф. И. О. сотрудника - " + fullName);
-
         System.out.println();
         System.out.println();
 
@@ -37,7 +31,6 @@ public class Main {
         System.out.println("=======");
         System.out.println();
         System.out.println(fullName.toUpperCase());
-
         System.out.println();
         System.out.println();
 
@@ -47,12 +40,9 @@ public class Main {
         System.out.println("Task " + taskN + ".");
         System.out.println("=======");
         System.out.println();
-
         fullName = "Иванов Семён Семёнович";
-//        System.out.println("fullName = " + fullName);
         fullName = fullName.replace('ё', 'е');
         System.out.println("fullName = " + fullName);
-
         System.out.println();
         System.out.println();
     }
