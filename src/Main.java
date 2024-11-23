@@ -36,7 +36,6 @@ public class Main {
         System.out.println("Task " + taskN + ".");
         System.out.println("=======");
         System.out.println();
-
         System.out.println(fullName.toUpperCase());
 
         System.out.println();
@@ -52,12 +51,10 @@ public class Main {
         fullName = "Иванов Семён Семёнович";
 //        System.out.println("fullName = " + fullName);
         fullName = fullName.replace('ё', 'е');
-
         System.out.println("fullName = " + fullName);
 
         System.out.println();
         System.out.println();
-
     }
 }
 
