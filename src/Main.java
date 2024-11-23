@@ -1,4 +1,4 @@
-// import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -7,8 +7,9 @@ public class Main {
         // Heading
         System.out.println();
         System.out.println();
-        System.out.println("<<<<  Homework 08  >>>>");
+        System.out.println("<<<<  Homework 10 (Strings) >>>>");
         System.out.println();
+
 
         int taskN = 0;
 
@@ -19,17 +20,13 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        int[] weekPayments = new int[]{
-                39902, 23930, 43023, 9986, 12303
-        };
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = firstName + " " + middleName + " " + lastName;
 
-        int weekPaymentsSum = 0;
-        int lastIndex = weekPayments.length - 1;
-        for (int j = 0; j <= lastIndex; j++) {
-            weekPaymentsSum += weekPayments[j];
-        }
+        System.out.println("Ф. И. О. сотрудника - " + fullName);
 
-        System.out.println("Сумма трат за месяц составила " + weekPaymentsSum + " рублей.");
         System.out.println();
         System.out.println();
 
@@ -40,19 +37,7 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        int minWeekPayments = weekPayments[0];
-        int maxWeekPayments = weekPayments[0];
-        lastIndex = weekPayments.length - 1;
-        for (int j = 0; j <= lastIndex; j++) {
-            if (weekPayments[j] > maxWeekPayments) {
-                maxWeekPayments = weekPayments[j];
-            }
-            if (weekPayments[j] < minWeekPayments) {
-                minWeekPayments = weekPayments[j];
-            }
-        }
-        System.out.println("Минимальная сумма трат за неделю составила " + minWeekPayments + " рублей.");
-        System.out.println("Максимальная сумма трат за неделю составила " + maxWeekPayments + " рублей.");
+        System.out.println(fullName.toUpperCase());
 
         System.out.println();
         System.out.println();
@@ -64,37 +49,15 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        weekPaymentsSum = 0;
-        lastIndex = weekPayments.length - 1;
-        for (int j = 0; j <= lastIndex; j++) {
-            weekPaymentsSum += weekPayments[j];
-        }
-        double averageWeekPayments = weekPaymentsSum;
-        averageWeekPayments = (averageWeekPayments / weekPayments.length);
-        System.out.println("Средняя сумма трат за месяц составила " + averageWeekPayments + " рублей.");
-        System.out.println();
-        System.out.println();
+        fullName = "Иванов Семён Семёнович";
+//        System.out.println("fullName = " + fullName);
+        fullName = fullName.replace('ё', 'е');
 
-
-        // Task 4
-
-        taskN += 1;
-        System.out.println("Task " + taskN + ".");
-        System.out.println("=======");
-        System.out.println();
-
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        lastIndex = reverseFullName.length - 1;
-        for (int j = lastIndex; j >= 0; j--) {
-            System.out.print(reverseFullName[j]);
-//            if (j != 0) {
-//                System.out.print(", ");
-//            }
-        }
-        System.out.println();
+        System.out.println("fullName = " + fullName);
 
         System.out.println();
         System.out.println();
+
     }
 }
 
